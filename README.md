@@ -77,7 +77,7 @@ It also provides **personalized improvement suggestions** using model-driven ins
 ## 📈 Visual Insights
 
 ### 🔹 Feature Importance
-![Feature Importance](outputs/visuals/feature_importance.png)
+![Feature Importance](outputs/visualsfeature_importance.png)
 
 ### 🔹 Actual vs Predicted
 ![Actual vs Predicted](outputs/visuals/actual_vs_predicted.png)
