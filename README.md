@@ -1,127 +1,107 @@
-# Smart Adaptive Focus Prediction System
+# 🎯 Smart Adaptive Focus Prediction System (XGBoost + Streamlit)
 
-A machine learning project that predicts a user's focus score based on lifestyle and environment factors such as sleep, screen time, stress, mood, and task difficulty.
-
-This repository includes:
-- a Jupyter notebook for experimentation and model workflow,
-- and a Streamlit web app for interactive predictions.
-
-## Demo Purpose
-
-The app is designed to:
-- estimate a focus score (`0-100`) from user inputs,
-- provide quick improvement suggestions,
-- and demonstrate an end-to-end ML workflow from data generation to deployment UI.
-
-## Features
-
-- Synthetic dataset generation (`500` rows by default)
-- Feature engineering:
-  - `sleep_category`
-  - `sleep_stress_interaction`
-  - `caffeine_sleep_interaction`
-- Label encoding for categorical features
-- XGBoost regressor for focus score prediction
-- Streamlit-based interactive interface
-- Personalized "what to improve" suggestions
-
-## Tech Stack
-
-- Python
-- Pandas
-- NumPy
-- scikit-learn
-- XGBoost
-- Streamlit
-
-## Project Structure
-
-```text
-Smart Adaptive Focus Prediction System/
-├── app.py
-├── requirements.txt
-├── Smart_Adaptive_Focus_Prediction_System.ipynb
-└── README.md
-```
-
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd "<your-repo-name>"
-```
-
-2. (Recommended) Create and activate a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-On Windows (PowerShell):
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run the Streamlit App
-
-```bash
-streamlit run app.py
-```
-
-If `streamlit` command is not recognized:
-
-```bash
-python -m streamlit run app.py
-```
-
-Open in browser:
-- `http://localhost:8501`
-
-## How It Works
-
-1. Generates synthetic focus-related data.
-2. Trains an XGBoost regression model.
-3. Accepts user inputs from the Streamlit UI.
-4. Predicts a focus score.
-5. Tests alternative input adjustments and suggests changes that can improve the predicted score.
-
-## Input Parameters
-
-- `sleep_hours` (3-9)
-- `screen_time` (1-9)
-- `noise_level` (1-3)
-- `time_of_day` (1-3)
-- `caffeine` (0-3)
-- `stress_level` (1-5)
-- `exercise` (0-3)
-- `mood` (1-5)
-- `task_difficulty` (1-3)
-
-## Notes
-
-- The dataset is synthetic and intended for educational/demo use.
-- Model predictions are approximate and should not be used as medical or clinical advice.
-
-## Future Improvements
-
-- Save/load trained model artifacts (`joblib`)
-- Add model evaluation dashboard (RMSE/MAE/R2 and plots)
-- Add user history tracking and trend charts
-- Deploy to Streamlit Community Cloud
-
-## License
-
-You can add your preferred license here (for example, MIT).
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Machine Learning](https://img.shields.io/badge/ML-XGBoost-orange)
+![Deployment](https://img.shields.io/badge/Deployment-Streamlit-red)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-If you found this project useful, consider starring the repository.
+## 🚀 Project Overview
+
+The **Smart Adaptive Focus Prediction System** is an end-to-end machine learning application that predicts a user's focus score based on daily lifestyle factors such as sleep, stress, screen time, and exercise.
+
+It also provides **personalized improvement suggestions** using model-driven insights.
+
+---
+
+## 🎯 Objective
+
+- Predict user focus level (0–100)
+- Provide actionable suggestions to improve focus
+- Deliver real-time predictions via an interactive web app
+
+---
+
+## 🧠 Key Features
+
+✔️ Synthetic dataset generation  
+✔️ Feature engineering with interaction features  
+✔️ XGBoost regression model  
+✔️ Real-time prediction using Streamlit  
+✔️ Personalized improvement suggestions  
+✔️ Model visualization (feature importance, residuals)
+
+---
+
+## ⚙️ Workflow
+
+![Workflow](outputs/visuals/workflow.png)
+
+---
+
+## 🔍 Features Used
+
+- Sleep Hours  
+- Screen Time  
+- Noise Level  
+- Time of Day  
+- Caffeine Intake  
+- Stress Level  
+- Exercise  
+- Mood  
+- Task Difficulty  
+
+---
+
+## 📊 Feature Engineering
+
+- Sleep Category (Low / Medium / High)  
+- Sleep × Stress Interaction  
+- Caffeine × Sleep Interaction  
+- Categorical Encoding using LabelEncoder  
+
+---
+
+## 🤖 Model
+
+- Algorithm: **XGBoost Regressor**
+- Optimized hyperparameters:
+  - n_estimators = 300  
+  - learning_rate = 0.05  
+  - max_depth = 4  
+- Handles non-linear relationships effectively
+
+---
+
+## 📈 Visual Insights
+
+### 🔹 Feature Importance
+![Feature Importance](outputs/visuals/feature_importance.png)
+
+### 🔹 Actual vs Predicted
+![Actual vs Predicted](outputs/visuals/actual_vs_predicted.png)
+
+### 🔹 Residual Analysis
+![Residuals](outputs/visuals/residuals.png)
+
+---
+
+## 💻 Streamlit App
+
+Interactive web app for real-time predictions.
+
+### 🔧 Features:
+- User-friendly input interface  
+- Instant focus score prediction  
+- Personalized improvement suggestions  
+- Visual insights dashboard  
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/focus-prediction-system.git
+cd focus-prediction-system
