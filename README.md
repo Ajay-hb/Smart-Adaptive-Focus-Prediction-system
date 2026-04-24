@@ -32,11 +32,6 @@ It also provides **personalized improvement suggestions** using model-driven ins
 ✔️ Personalized improvement suggestions  
 ✔️ Model visualization (feature importance, residuals)
 
----
-
-## ⚙️ Workflow
-
-![Workflow](outputs/visuals/workflow.png)
 
 ---
 
@@ -74,22 +69,13 @@ It also provides **personalized improvement suggestions** using model-driven ins
 
 ---
 
-## 📈 Visual Insights
 
-### 🔹 Feature Importance
-![Feature Importance](outputs/visualsfeature_importance.png)
-
-### 🔹 Actual vs Predicted
-![Actual vs Predicted](outputs/visuals/actual_vs_predicted.png)
-
-### 🔹 Residual Analysis
-![Residuals](outputs/visuals/residuals.png)
-
----
 
 ## 💻 Streamlit App
 
 Interactive web app for real-time predictions.
+<img width="1920" height="1529" alt="screencapture-localhost-8501-2026-04-24-13_33_59" src="https://github.com/user-attachments/assets/a8709f1b-294a-4962-a97a-44e8b77869d0" />
+
 
 ### 🔧 Features:
 - User-friendly input interface  
