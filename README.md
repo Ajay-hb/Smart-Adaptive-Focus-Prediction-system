@@ -19,7 +19,7 @@
 ## 🚀 Live Demo & Code
 
 <p align="center">
-  <a href="(https://ajay-smart-adaptive-focus-prediction-system.streamlit.app/)" target="_blank">
+  <a href="https://ajay-smart-adaptive-focus-prediction-system.streamlit.app/" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Live%20App-Open-success?style=for-the-badge"/>
   </a>
   <a href="https://github.com/Ajay-hb/Smart-Adaptive-Focus-Prediction-system" target="_blank">
