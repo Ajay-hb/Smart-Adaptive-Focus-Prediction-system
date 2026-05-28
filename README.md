@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Python-3.10-blue"/>
   <img src="https://img.shields.io/badge/Machine%20Learning-XGBoost-orange"/>
   <img src="https://img.shields.io/badge/Deployment-Streamlit-red"/>
-  <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen"/>
+  <img src="https://img.shields.io/badge/Status-Production%20Complete-brightgreen"/>
 </p>
 
 ---
